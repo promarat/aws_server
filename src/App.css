@@ -1,0 +1,431 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url('./assets/fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url('./assets/fonts/Montserrat-Regular.ttf');
+}
+
+.App {
+    text-align: center;
+}
+
+body {
+    background-color: #F8F0FF;
+}
+
+.main-container {
+    /* max-width: 1366px;
+  border: 1px solid red;
+  background-image: url("./assets/imgs/Glass.jpg");
+  height: 1535px;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  position: relative; */
+    /* width: 1366px; */
+    /* height: 1535px; */
+    left: 0px;
+    top: 0px;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.53);
+}
+
+.page-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.53);
+    backdrop-filter: blur(100px);
+}
+
+.page-block {
+    position: relative;
+    z-index: 10;
+}
+
+.Ellipse-1 {
+    position: absolute;
+    width: 406.42px;
+    height: 406.42px;
+    left: -343px;
+    top: 340px;
+    background: #FFB257;
+    filter: blur(179px);
+    transform: rotate(45deg);
+    z-index: 9;
+}
+
+.Ellipse-2 {
+    position: absolute;
+    width: 348.21px;
+    height: 348.21px;
+    left: -130px;
+    top: 184.04px;
+    background: #B557FF;
+    filter: blur(261px);
+    transform: rotate(45deg);
+    z-index: 8;
+}
+
+.Ellipse-3 {
+    position: absolute;
+    width: 333.89px;
+    height: 333.89px;
+    left: -56.37px;
+    top: 317.81px;
+    background: #FF5757;
+    filter: blur(176px);
+    transform: rotate(45deg);
+    z-index: 7;
+}
+
+.Ellipse-4 {
+    position: absolute;
+    width: 353px;
+    height: 353px;
+    left: 12px;
+    bottom: -55px;
+    background: #BB97B1;
+    filter: blur(187px);
+    z-index: 6;
+}
+
+.Ellipse-5 {
+    position: absolute;
+    width: 459px;
+    height: 459px;
+    right: -128px;
+    top: 915px;
+    background: #FFB4CF;
+    filter: blur(93px);
+    z-index: 5;
+}
+
+.Ellipse-6 {
+    position: absolute;
+    width: 585px;
+    height: 585px;
+    right: -91px;
+    bottom: -211px;
+    background: #FFCABE;
+    filter: blur(55px);
+    z-index: 4;
+}
+
+.Ellipse-7 {
+    position: absolute;
+    width: 291.77px;
+    height: 291.77px;
+    right: 91.18px;
+    top: -37.8px;
+    background: #FFB257;
+    filter: blur(179px);
+    transform: rotate(25.03deg);
+    z-index: 3;
+}
+
+.Ellipse-8 {
+    position: absolute;
+    width: 355.79px;
+    height: 355.79px;
+    right: -92.73px;
+    top: -210.68px;
+    background: #B557FF;
+    filter: blur(179px);
+    transform: rotate(25.03deg);
+    z-index: 2;
+}
+
+.Ellipse-9 {
+    position: absolute;
+    width: 284.43px;
+    height: 284.43px;
+    right: -69.15px;
+    top: 43.65px;
+    background: #FF5757;
+    filter: blur(179px);
+    transform: rotate(25.03deg);
+    z-index: 1;
+}
+
+.logo-wrap {
+    margin-top: 16px;
+}
+
+.head-screen {
+    margin-top: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.head-title {
+    font-family: 'Montserrat-Bold';
+    color: #281E30;
+    font-size: 64px;
+    line-height: 78px;
+}
+
+.head-title-voide {
+    background-color: #f3ec78;
+    background-image: linear-gradient(#CF68FF, #A24EE4, #4C32EC);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.description {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.41px;
+    color: rgba(54, 36, 68, 0.8);
+}
+
+.downloadButtons {
+    max-width: 348px;
+    filter: drop-shadow(0px 11px 28px rgba(71, 52, 74, 0.51));
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-block {
+    margin-top: 50px;
+}
+
+.phones-mockup {
+    margin-top: 86px;
+    width: 828px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.phone-container {
+    display: inline-block;
+}
+
+.phones-mockup .phone {
+    width: 237px;
+    height: 512px;
+    border: 8px solid #67527A;
+    box-shadow: 0px 29px 52px -11px rgba(76, 1, 83, 0.25);
+    filter: drop-shadow(0px 0px 18px rgba(85, 15, 118, 0.25));
+    border-radius: 24px;
+}
+
+.phone2 {
+    margin-top: 50px;
+}
+
+.subscribe-form {
+    max-width: 1041px;
+    padding: 97px 107px;
+    box-shadow: 0px 42px 88px -30px rgb(139 20 158 / 25%);
+    border-radius: 40px;
+    background: #FFFFFF;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-title {
+    font-family: 'Montserrat-Bold';
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.374px;
+    color: #281E30;
+    text-align: left;
+}
+
+.subscribe-description {
+    font-family: 'Montserrat-Regular';
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.41px;
+    color: rgba(54, 36, 68, 0.8);
+    text-align: left;
+}
+
+.sub-des {
+    width: 40%;
+    display: inline-block;
+}
+
+.sub-input {
+    width: 60%;
+    display: inline-block;
+}
+
+.your-email {
+    font-family: 'Montserrat-Regular';
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.41px;
+    color: #281E30;
+}
+
+.email-input {
+    padding: 16px 24px;
+    width: calc(100% - 176px);
+    background: #F8F0FF;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-button {
+    width: 168px;
+    height: 60px;
+    background: linear-gradient(180deg, #D89DF4 0%, #B35CF8 52.08%, #8229F4 100%);
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    margin-left: 8px;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.41px;
+    color: #FFFFFF;
+    font-family: 'Montserrat-Regular';
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background: linear-gradient(180deg, #C479FF 0%, #8229F4 52.08%, #650DD6 100%);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1041px;
+    margin: 24px auto;
+}
+
+.error-state {
+    border: 1px solid #E41717;
+}
+
+@media only screen and (min-width: 1366px) {
+    .page-container {
+        width: 1366px !important;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1103px) {
+    .sub-des {
+        width: 100%;
+        display: block;
+    }
+    .sub-input {
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+    }
+    .subscribe-form {
+        padding: 79px 56px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1103px) {
+    .subscribe-form,
+    .footer {
+        width: calc(100% - 64px);
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media only screen and (max-width: 828px) {
+    .phones-mockup {
+        width: calc(100% - 80px);
+        margin: 86px auto;
+    }
+    .phones-mockup .mid-phone {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .phones-mockup .phone {
+        width: 203px !important;
+        height: 439px !important;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .phones-mockup {
+        display: block;
+    }
+    .phone-container {
+        display: block;
+    }
+    .phone {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .sub-des {
+        width: 100%;
+        display: block;
+    }
+    .sub-input {
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+    }
+    .subscribe-form {
+        padding: 24px 48px;
+    }
+    .email-input {
+        width: 100%;
+    }
+    .subscribe-button {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .head-title {
+        font-size: 48px;
+        line-height: 59px;
+    }
+    .head-screen {
+        margin-top: 53px;
+    }
+    .downloadButtons {
+        display: block;
+    }
+    .buttonWrap {
+        margin: 16px auto;
+    }
+    .button-block {
+        margin-top: 32px;
+    }
+    .phones-mockup {
+        margin-top: 30px;
+    }
+    .subscribe-title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .subscribe-form {
+        margin-left: 12px;
+        margin-right: 12px;
+        width: calc(100% - 24px);
+        padding: 48px 24px;
+    }
+    .footer {
+        display: block;
+    }
+}

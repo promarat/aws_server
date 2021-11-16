@@ -1,0 +1,13 @@
+.storeButton {
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.buttonWrap {
+    width: 166px;
+    height: 48px;
+}
