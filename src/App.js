@@ -7,6 +7,7 @@ import Phone3 from "./assets/imgs/phone3.png";
 import './App.css';
 import WOW from 'wowjs';
 import { useEffect, useState } from "react";
+import { SubScribeService } from "./services/subscribe.service"
 
 function App() {
   const iOSUrl = 'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
@@ -32,8 +33,8 @@ function App() {
       setError(true);
       return;
     }
-    console.log(email);
     //Send Email to Server====================
+    SubScribeService(email);
   }
   return (
     <div className="App">
