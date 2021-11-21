@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:80/subscribe";
+const API_URL = "http://ec2-18-191-232-197.us-east-2.compute.amazonaws.com:5432/subscribe";
 // const API_URL = "https://main.d1qk4b11ey8dra.amplifyapp.com/subscribe";
 
 export const SubScribeService = (email) => {
