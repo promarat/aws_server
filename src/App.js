@@ -90,7 +90,7 @@ function App() {
               <div className="sub-des">
                 <h1 className="subscribe-title">Subscribe to us!</h1>
                 <h5 className="subscribe-description">
-                  Subscribe to us and we will notify you whenthe application is ready
+                  Subscribe to us and we will notify you when the application is ready
                 </h5>
               </div>
               <div className="sub-input">
