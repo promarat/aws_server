@@ -312,6 +312,24 @@ body {
     border: 1px solid #E41717;
 }
 
+.modal-header {
+    border-bottom: 0px !important;
+    padding-left: 30px !important;
+
+    font-family: 'Montserrat-Bold' !important;
+}
+.modal-footer {
+    border-top: 0px !important;
+}
+.modal-body {
+    padding: 0px 30px 10px 30px !important;
+
+    font-family: 'Montserrat-Regular' !important;
+}
+.modal-content {
+    border-radius: 16px !important;
+}
+
 @media only screen and (min-width: 1366px) {
     .page-container {
         width: 1366px !important;

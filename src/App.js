@@ -7,14 +7,21 @@ import Phone3 from "./assets/imgs/phone3.png";
 import './App.css';
 import WOW from 'wowjs';
 import { useEffect, useState } from "react";
-import { SubScribeService } from "./services/subscribe.service"
+// import { SubScribeService } from "./services/subscribe.service"
+import axios from "axios";
+import Popup from "./components/popup/Popup";
+import { Modal, Button, Form } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   const iOSUrl = 'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
   const androidUrl = 'https://play.google.com';
 
+  const HANDLE_API_URL = "http://18.191.232.197:5432/subscribe";
+  
   const [email, setEmail] = useState('');
   const [error, setError] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     new WOW.WOW({
@@ -27,6 +34,16 @@ function App() {
     setEmail(e.target.value);
   }
 
+  const onLoginFormSubmit = (e) => {
+    e.preventDefault();
+    handleClose();
+  };
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const subscribe = () => {
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!email || !re.test(email)) {
@@ -34,8 +51,18 @@ function App() {
       return;
     }
     //Send Email to Server====================
-    SubScribeService(email);
+    // SubScribeService(email);
+
+    axios.post(HANDLE_API_URL, {email:email})
+    .then(response => {
+        setEmail("");
+    }).catch(function (error) {
+        // setEmail("");
+        // alert('Thank you for your subscription! We\'ll get back to you soon!');
+    });
+    handleShow();
   }
+
   return (
     <div className="App">
       <div className="container-fluid main-container">
@@ -103,6 +130,17 @@ function App() {
                 </div>
               </div>
             </div>
+
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton>
+                <Modal.Title>Raise Your Voice</Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                Thank you for your subscription! We'll get back to you soon!
+              </Modal.Body>
+              <Modal.Footer>
+              </Modal.Footer>
+            </Modal>
           </div>
           <div className="footer page-block">
             <div>
