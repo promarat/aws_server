@@ -17,7 +17,7 @@ function App() {
   const iOSUrl = 'https://itunes.apple.com/us/app/all-of-the-lights/id959389722?mt=8';
   const androidUrl = 'https://play.google.com';
 
-  const HANDLE_API_URL = "http://18.191.232.197:5432/subscribe";
+  const HANDLE_API_URL = "https://ec2-18-117-55-156.us-east-2.compute.amazonaws.com:443/subscribe";
   
   const [email, setEmail] = useState('');
   const [error, setError] = useState(false);
